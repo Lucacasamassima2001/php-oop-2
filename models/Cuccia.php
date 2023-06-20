@@ -9,6 +9,9 @@ class Cuccia extends Product{
         $this->setPrice($price);
         $this->setImg($urlimg);
     }
+    public function getStatus(){
+        return $this->usato;
+    }
 }
 
 

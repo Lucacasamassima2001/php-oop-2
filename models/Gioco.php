@@ -9,4 +9,7 @@ class Gioco extends Product{
         $this->setPrice($price);
         $this->setImg($urlimg);
     }
+    public function getPoints(){
+        return $this->punteggio;
+    }
 }

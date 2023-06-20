@@ -9,4 +9,7 @@ class Cibo extends Product{
         $this->setPrice($price);
         $this->setImg($urlimg);
     }
+    public function getScadenza(){
+        return $this->scadenza;
+    }
 }

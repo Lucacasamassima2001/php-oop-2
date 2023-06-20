@@ -40,4 +40,17 @@ class Product{
     public function setImg($urlimg){
         $this->urlimg = $urlimg;
     }
+
+    public function showCategory($category){
+        if($this->category == 'cane'){
+            return $this->category = '<i class="fa-solid fa-dog"></i>';
+        }
+        else if($this->category == 'gatto'){
+            return $this->category = '<i class="fa-solid fa-cat"></i>';
+
+        }
+        else{
+            return $this->category = '<i class="fa-solid fa-paw"></i>';
+        }
+    }
 };

@@ -1,15 +1,16 @@
 <?php
 
 class Product{
-    protected string $name;
-    protected string $category;
-    protected int $price;
+    public string $name;
+    public string $category;
+    public int $price;
+    public string $urlimg;
 
-    public function __construct(string $name, string $category, int $price){
+    public function __construct(string $name, string $category, int $price, string $urlimg){
         $this->setName($name);
         $this->setCategory($category);
         $this->setPrice($price);
-
+        $this->setImg($urlimg);
     }
 
     public function getName(){
@@ -20,6 +21,9 @@ class Product{
     }
     public function getPrice(){
         return $this->price;
+    }
+    public function getImg(){
+        return $this->urlimg;
     }
 
     public function setName($name){
@@ -32,5 +36,8 @@ class Product{
 
     public function setPrice($price){
         $this->price = $price;
+    }
+    public function setImg($urlimg){
+        $this->urlimg = $urlimg;
     }
 };
